@@ -11,9 +11,10 @@ def ask (query, embeddings, pages_and_chunks,embeddings_df_save_path,):
     
     scores, indices = retrieve_relevant_resources(query=query,
                                                   embeddings=embeddings)
+  # basically score is telling the similarity score and indices is top relevant chunks at that index                                                
     
 
-    
+    # top k matching chunks
     context_items = [pages_and_chunks[i] for i in indices]
 
 # Extract the 'content' from each dictionary and join them into a single string

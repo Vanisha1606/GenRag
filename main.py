@@ -60,7 +60,7 @@ print("\n\n")
 sleep(2)
 
 
-
+# we will make query also in embedding format , we will get relevant data , LLM will answer 
 
 ans = ask(query=query, embeddings=embeddings, pages_and_chunks=pages_and_chunks,embeddings_df_save_path=embeddings_df_save_path)
 
